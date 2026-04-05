@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Resume Analyzer</title>
+</head>
+
+<body style="margin:0; font-family:Arial; background:linear-gradient(to right, #4facfe, #00f2fe);">
+
+    <div style="width:90%; max-width:800px; margin:40px auto; background:white; padding:20px; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.2);">
+
+        <h1 style="text-align:center; color:#333;">🤖 AI Resume Analyzer</h1>
+
+        <!-- Upload Resume -->
+        <label style="font-weight:bold;">Upload Resume:</label><br><br>
+        <input type="file" id="resume" style="padding:10px; width:100%; border-radius:5px; border:1px solid #ccc;"><br><br>
+
+        <!-- Job Description -->
+        <label style="font-weight:bold;">Paste Job Description:</label><br><br>
+        <textarea id="jobDesc" rows="6" placeholder="Paste job description here..." 
+        style="width:100%; padding:10px; border-radius:5px; border:1px solid #ccc;"></textarea><br><br>
+
+        <!-- Analyze Button -->
+        <button onclick="analyzeResume()" 
+        style="width:100%; padding:12px; background:#4facfe; color:white; border:none; border-radius:5px; font-size:16px; cursor:pointer;">
+            Analyze Resume
+        </button>
+
+        <!-- Result Section -->
+        <div id="result" style="margin-top:20px; display:none;">
+
+            <h2 style="color:#333;">📊 Analysis Result</h2>
+
+            <p><strong>Match Score:</strong> <span id="score"></span>%</p>
+
+            <p><strong>Suggestions:</strong></p>
+            <ul id="suggestions"></ul>
+
+        </div>
+
+    </div>
+
+    <script>
+        function analyzeResume() {
+            let resume = document.getElementById("resume").files.length;
+            let jobDesc = document.getElementById("jobDesc").value;
+
+            if (!resume || jobDesc.trim() === "") {
+                alert("Please upload resume and enter job description!");
+                return;
+            }
+
+            // Dummy AI logic (frontend only)
+            let score = Math.floor(Math.random() * 40) + 60;
+
+            let suggestions = [
+                "Add more relevant technical skills.",
+                "Use keywords from job description.",
+                "Improve project descriptions with impact.",
+                "Add measurable achievements."
+            ];
+
+            document.getElementById("score").innerText = score;
+
+            let list = document.getElementById("suggestions");
+            list.innerHTML = "";
+
+            suggestions.forEach(s => {
+                let li = document.createElement("li");
+                li.innerText = s;
+                list.appendChild(li);
+            });
+
+            document.getElementById("result").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
