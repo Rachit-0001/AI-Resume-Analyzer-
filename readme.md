@@ -51,30 +51,6 @@ This tool helps students and job seekers improve their resumes and increase thei
 
 7. Generate suggestions  
 
----
-
-## 🏗️ Project Structure
-[Start]
-   ↓
-[User Upload Resume]
-   ↓
-[Flask Backend (app.py)]
-   ↓
-[Save File → uploads/]
-   ↓
-[Text Extraction → parser.py]
-   ↓
-[Analysis → analyzer.py]
-   ↓
-[Generate Results]
-   ↓
-[Send to Frontend]
-   ↓
-[Display Output (index.html)]
-   ↓
-[End]
-
-
 
 ---
 
