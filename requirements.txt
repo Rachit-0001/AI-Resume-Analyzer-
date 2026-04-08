@@ -1,4 +1,5 @@
 flask
+gunicorn
 spacy
 scikit-learn
 pdfplumber
