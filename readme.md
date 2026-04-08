@@ -86,6 +86,18 @@ This tool helps students and job seekers improve their resumes and increase thei
 
 
 ---
+Use Cases
+-Resume optimization for students
+-Placement preparation
+-AI-based hiring tools
+-College mini/major projects
+
+----
+
+Author-
+Rachit Gangwar
+If you like this project, give it a ⭐ on GitHub!
+---
 
 ## 📊 Sample Output
 
@@ -95,16 +107,5 @@ This tool helps students and job seekers improve their resumes and increase thei
   "skills": ["python", "html", "css"],
   "missing": ["react", "node"],
   "suggestions": ["Add these skills: react, node"]
-}
- ---
-
-Use Cases
--Resume optimization for students
--Placement preparation
--AI-based hiring tools
--College mini/major projects
- ---
-Author-
-Rachit Gangwar
-If you like this project, give it a ⭐ on GitHub!
-
+} 
+ 
