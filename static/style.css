@@ -1,0 +1,100 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* dark black-blue */
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+}
+
+/* Container */
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.6);  /* black glass effect */
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+}
+/* Title */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Inputs */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+.tag {
+    background: rgba(0, 255, 255, 0.15);
+    border: 1px solid rgba(0,255,255,0.3);
+}
+
+.missing {
+    background: rgba(255, 0, 0, 0.15);
+    border: 1px solid rgba(255,0,0,0.4);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Result Box */
+.result {
+    margin-top: 25px;
+}
+
+/* Score Bar */
+.score-bar {
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.score-fill {
+    height: 20px;
+    background: linear-gradient(90deg, #00ff87, #60efff);
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: black;
+}
+
+/* Skill Tags */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: rgba(0,255,255,0.2);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Missing Skills */
+.missing {
+    background: rgba(255, 0, 0, 0.2);
+}

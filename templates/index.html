@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+
+    <h1>AI Resume Analyzer</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+    <input type="file" name="resume" required>
+
+    <select name="role" required>
+        <option value="">Select Role</option>
+        <option>Frontend Developer</option>
+        <option>Backend Developer</option>
+        <option>Full-Stack Developer</option>
+        <option>Mobile Developer</option>
+        <option>Game Developer</option>
+        <option>DevOps Engineer</option>
+        <option>Data Scientist/Engineer</option>
+        <option>Security Developer</option>
+    </select>
+
+    
+
+    <button type="submit">Analyze Resume</button>
+</form>
+   {% if result %}
+<div class="result">
+
+    <h3>ATS Score</h3>
+
+    <div class="score-bar">
+        <div class="score-fill" style="width: {{ result.score }}%;">
+            {{ result.score }}%
+        </div>
+    </div>
+
+    <h4>Skills Found</h4>
+    <div class="tags">
+        {% for skill in result.skills %}
+            <span class="tag">{{ skill }}</span>
+        {% endfor %}
+    </div>
+
+    <h4>Missing Skills</h4>
+    <div class="tags">
+        {% for m in result.missing %}
+            <span class="tag missing">{{ m }}</span>
+        {% endfor %}
+    </div>
+
+    <h4>Suggestions</h4>
+    <ul>
+        {% for s in result.suggestions %}
+            <li>{{ s }}</li>
+        {% endfor %}
+    </ul>
+
+</div>
+{% endif %}
+
+</div>
+</body>
+</html>
