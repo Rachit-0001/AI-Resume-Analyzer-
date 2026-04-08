@@ -54,25 +54,25 @@ This tool helps students and job seekers improve their resumes and increase thei
 ---
 
 ## 🏗️ Project Structure
-ai-resume-analyzer/
-│
-├── app.py # Flask main app
-│
-├── utils/
-│ ├── parser.py # Resume text extraction
-│ ├── analyzer.py # Resume analysis logic
-│
-├── templates/
-│ └── index.html # Frontend UI
-│
-├── static/
-│ ├── style.css # Styling
-│ └── script.js # JavaScript logic
-│
-├── uploads/ # Uploaded resumes
-├── requirements.txt
-├── README.md
-└── .gitignore
+[Start]
+   ↓
+[User Upload Resume]
+   ↓
+[Flask Backend (app.py)]
+   ↓
+[Save File → uploads/]
+   ↓
+[Text Extraction → parser.py]
+   ↓
+[Analysis → analyzer.py]
+   ↓
+[Generate Results]
+   ↓
+[Send to Frontend]
+   ↓
+[Display Output (index.html)]
+   ↓
+[End]
 
 
 
@@ -120,13 +120,14 @@ ai-resume-analyzer/
   "missing": ["react", "node"],
   "suggestions": ["Add these skills: react, node"]
 }
+ ---
 
 Use Cases
 -Resume optimization for students
 -Placement preparation
 -AI-based hiring tools
 -College mini/major projects
-
+ ---
 Author-
 Rachit Gangwar
 If you like this project, give it a ⭐ on GitHub!
