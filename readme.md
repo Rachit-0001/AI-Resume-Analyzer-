@@ -1,5 +1,5 @@
 # 🚀 AI Resume Analyzer  
-### ATS Score + Skill Gap Detection using NLP & Flask
+### ATS Score + Skill Gap Detection using NLP & Flask and futher we make by MERN
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)  
 ![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black?logo=flask)  
