@@ -9,7 +9,7 @@
 ![PDF](https://img.shields.io/badge/PDF-pdfplumber-lightgrey)  
 ![DOCX](https://img.shields.io/badge/DOCX-python--docx-blueviolet)  
 
-![Render](https://ai-resume-yvo5.onrender.com)
+https://ai-resume-yvo5.onrender.com
 
 ---
 
